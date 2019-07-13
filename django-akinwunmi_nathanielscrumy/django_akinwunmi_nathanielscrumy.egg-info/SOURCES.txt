@@ -1,0 +1,15 @@
+MANIFEST.in
+README.rst
+setup.py
+akinwunmi_nathanielscrumy/__init__.py
+akinwunmi_nathanielscrumy/admin.py
+akinwunmi_nathanielscrumy/apps.py
+akinwunmi_nathanielscrumy/models.py
+akinwunmi_nathanielscrumy/tests.py
+akinwunmi_nathanielscrumy/urls.py
+akinwunmi_nathanielscrumy/views.py
+akinwunmi_nathanielscrumy/migrations/__init__.py
+django_akinwunmi_nathanielscrumy.egg-info/PKG-INFO
+django_akinwunmi_nathanielscrumy.egg-info/SOURCES.txt
+django_akinwunmi_nathanielscrumy.egg-info/dependency_links.txt
+django_akinwunmi_nathanielscrumy.egg-info/top_level.txt

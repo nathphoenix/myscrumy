@@ -1,0 +1,4 @@
+include LICENSE
+include README.rst
+recursive-include akinwunmi_nathanielmyscrumy/static *
+recursive-include akinwunmi_nathanielmyscrumy/templates *
