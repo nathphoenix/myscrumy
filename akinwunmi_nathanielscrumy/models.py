@@ -2,7 +2,7 @@ from django.db import models
 from django.conf import settings
 from django.contrib.auth.models import User
 from datetime import datetime
-
+from random import randint
 
 # Create your models here.
 class GoalStatus(models.Model):
@@ -19,7 +19,7 @@ class ScrumyGoals(models.Model):
     goal_status = models.ForeignKey(GoalStatus, on_delete=models.PROTECT)
     owner = models.CharField(max_length=340)
     def __str__(self):
-        return self.goal_id
+        return self.goal_name
 
 class ScrumyHistory(models.Model):
     moved_from = models.CharField(max_length=340)
