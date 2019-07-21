@@ -18,8 +18,14 @@ def posts(request):
 def comments(request):
     return HttpResponse("<h1 style = 'font-size:30px' >Your comments are important to us!!!</h1>")
 
-def move_goal(request, goal_id):
-    return HttpResponse("<h1 style = 'font-size:30px' >You are looking at a generated goal_id %s </h1>" %goal_id)
+def movegoal(request, goal_id):
+    if goal_id != 1:
+        return HttpResponse("<h1 style = 'font-size:30px' >Welcome to the movegoal page...."
+        "You are seeing this page because the id you entered is not available on the database</h1>")
+    else:
+        move = ScrumyGoals.objects.get(pk=1)
+        return HttpResponse(move)
+
 
 def add_goal(request, goal_name):
         
